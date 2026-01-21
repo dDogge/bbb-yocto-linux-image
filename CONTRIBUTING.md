@@ -1,18 +1,15 @@
 # Contributing
 
+## Requirements
+- Linux host (Fedora recommended)
+- Git
+- Yocto/poky checkout (kept outside this repo or as a submodule)
+
 ## Setup
-- Requirements: (node/python/go/dotnet version)
-- Copy `.env.example` to `.env`
+- Copy `.env.example` to `.env` if you want scripts to read variables.
+- Run `scripts/setup-build.sh` to initialize a build directory.
 
-## Development
-- Install deps: `...`
-- Run locally: `...`
-
-## Testing
-- Run tests: `...`
-- Lint/format: `...`
-
-## Commit / PR guidelines
-- Prefer small commits with clear messages
-- Keep changes scoped
-- Update docs when behavior changes
+## Guidelines
+- Do not commit Yocto build output (`build*/`, `tmp*/`, `downloads*/`, `sstate-cache*/`).
+- Keep docs updated when build steps change.
+- Prefer small commits: one change = one commit.

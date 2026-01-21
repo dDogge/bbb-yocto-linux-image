@@ -1,0 +1,12 @@
+build*/
+tmp*/
+cache*/
+downloads*/
+sstate-cache*/
+deploy*/
+*.wic
+*.wic.xz
+.DS_Store
+.vscode/
+.idea/
+.env
